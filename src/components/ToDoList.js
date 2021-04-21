@@ -1,8 +1,8 @@
-import TodoListItem from './TodoListItem';
+import ToDoListItem from './ToDoListItem';
 
 const ToDoList = ({todos}) => {
     <div className='list-wrapper'>
-        {todos.map(todo => <TodoListItem todo={todo} />)}
+        {todos.map(todo => <ToDoListItem todo={todo} />)}
     </div>
 }
 
