@@ -1,10 +1,10 @@
 import { createStore, combineReducers } from 'redux';
 import { toDos } from './components/reducers';
 
-const reduceers = {
+const reducers = {
     toDos
 };
 
-const rootReducer = combineReducers(reduceers);
+const rootReducer = combineReducers(reducers);
 
 export const configureStore = () => createStore(rootReducer);
