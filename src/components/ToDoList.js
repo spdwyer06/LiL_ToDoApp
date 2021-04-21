@@ -1,9 +1,15 @@
 import ToDoListItem from './ToDoListItem';
 
-const ToDoList = ({todos}) => {
-    <div className='list-wrapper'>
-        {todos.map(todo => <ToDoListItem todo={todo} />)}
-    </div>
+import ToDoForm from './ToDoForm';
+
+const ToDoList = ({ todos = [{text: 'Hello World'}] }) => {
+    
+    return(
+        <div className='list-wrapper'>
+            <ToDoForm />
+            {todos.map(todo => <ToDoListItem todo={todo} />)}
+        </div>
+    );
 }
 
 export default ToDoList;
